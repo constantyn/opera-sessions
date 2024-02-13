@@ -2,14 +2,14 @@
   <v-app>
     <v-layout>
       <v-app-bar title="Opera Sessions">
-        <template v-slot:append>
+        <template #append>
           <v-app-bar-nav-icon @click="drawerOpen = !drawerOpen" />
         </template>
       </v-app-bar>
 
       <v-navigation-drawer v-model="drawerOpen" location="end">
         <v-list>
-          <v-list-item title="Home"/>
+          <v-list-item title="Home" />
         </v-list>
       </v-navigation-drawer>
 
